@@ -21,7 +21,7 @@ const IV = ['IV', 4] as const
 const I = ['I', 1] as const
 
 const toRomanTable = [M, CM, D, CD, C, XC, L, XL, X, IX, V, IV, I] as const
-const toArabicTable = [CM, M, CD, D, XC, C, XL, L, IX, X, IV, V, I] as const
+const toArabicTable = [CM, M, L, IX, X, IV, V, I] as const
 
 const convertToRoman = (number: number): string => {
   if (number > 3999) throw new Error('Please enter a number under 4000')
